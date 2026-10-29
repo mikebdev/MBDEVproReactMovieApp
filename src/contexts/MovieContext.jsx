@@ -2,11 +2,12 @@ import {createContext, useState, useContext, useEffect} from "react"
 
 const MovieContext = createContext()
 
-export const useMovieContext = () => useContext(MovieContext)
+export const useMovieContext = () => useContext(MovieContext) // Custom hook to use the MovieContext in other components
 
 export const MovieProvider = ({children}) => {
     const [favorites, setFavorites] = useState([])
 
+    // Load favorites from localStorage on initial render
     useEffect(() => {
         const storedFavs = localStorage.getItem("favorites")
 

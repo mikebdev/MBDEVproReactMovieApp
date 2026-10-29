@@ -2,7 +2,7 @@ import "./css/App.css";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
-import { MovieProvider } from "./contexts/MovieContext";
+import { MovieProvider } from "./contexts/MovieContext"; // Import the MovieProvider from the MovieContext to provide context to the entire application
 import NavBar from "./components/NavBar";
 
 // app component is the main component of the application that renders the entire application. It is the root component of the application. 
